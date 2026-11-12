@@ -18,7 +18,7 @@
 		}
 
 		if (usuario.indexOf('senai') !== -1) {
-			window.location.href = 'Inicio/index.html';
+			window.location.href = './Inicio/index.html';
 		} else {
 			erro.textContent = 'Usuário inválido. Por favor, insira um usuário existente.';
 			usuarioInput.focus();
