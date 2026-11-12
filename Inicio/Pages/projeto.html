@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="projeto.css">
+</head>
+
+<body data-page="projeto">
+    <header>
+        <h1>Portfólios 1DTM</h1>
+        <nav class="menu" aria-label="Navegação principal">
+            <button type="button" class="btn-voltar" onclick="window.history.back()">← Voltar</button>
+            <ul>
+                <li><a href="listarProjetos.html">Listar Projetos</a></li>
+                <li><a href="criarProjetos.html">Criação de Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="card projeto">
+            <h2 class="titulo-projeto" id="titulo">Projeto</h2>
+            <p class="sub" id="turma-projeto"></p>
+            <div id="detalhes">
+                <section>
+                    <h3>Descrição do Projeto</h3>
+                    <p id="descricao"></p>
+                </section>
+                <section>
+                    <h3>Imagem ou Vídeo</h3>
+                    <div id="midia"></div>
+                </section>
+                <section>
+                    <h3>Linguagem Utilizada</h3>
+                    <p id="linguagem"></p>
+                </section>
+                <section>
+                    <h3>Alunos Responsáveis</h3>
+                    <ul id="alunos"></ul>
+                </section>
+            </div>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

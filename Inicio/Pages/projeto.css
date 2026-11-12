@@ -1,0 +1,32 @@
+/* Página de detalhe de um projeto. */
+.card.projeto { width: min(100%, 760px); }
+
+.projeto section + section {
+	margin-top: 26px;
+	padding-top: 22px;
+	border-top: 1px solid var(--orchid-smoke);
+}
+
+.projeto h3 {
+	margin: 0 0 10px;
+	color: var(--amethyst-noir);
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.projeto p { margin: 0; line-height: 1.6; }
+
+.projeto img,
+.projeto video {
+	display: block;
+	max-width: 100%;
+	border-radius: 12px;
+}
+
+.projeto ul { margin: 0; padding-left: 20px; line-height: 1.7; }
+
+.titulo-projeto {
+	margin: 0 0 6px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.sub { margin: 0 0 22px; color: #6b5a85; }

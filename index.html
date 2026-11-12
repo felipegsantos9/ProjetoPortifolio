@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html lang="Pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Santos | Login</title>
+    <title>Login | Portfólio 1DTM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <header class="header">
+            <img class="logo" src="Assets/Marin.jpg" alt="Logotipo do Portfólio 1DTM" onerror="this.hidden = true">
+            <h1>Login - Portfólio</h1>
+        </header>
+
+        <form id="loginForm" class="login" method="post" novalidate>
+            <h2>Login do aluno</h2>
+
+            <div class="campo">
+                <label for="usuario">Registro de Matrícula</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ex: senai-123" autocomplete="username" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required>
+            </div>
+
+            <p class="erro" id="erro" role="alert"></p>
+
+            <button class="login-btn" type="submit">Entrar</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,144 @@
+/* Estilo da página inicial (mesma paleta das páginas em Pages/). */
+:root {
+	--imperial-violet: #2a123f;
+	--amethyst-noir: #4b1f6f;
+	--dusted-lavender: #9c86b9;
+	--orchid-smoke: #c6b6dd;
+	--moon-pearl: #f1edf7;
+	--text-soft: rgba(244, 237, 249, 0.92);
+}
+
+* { box-sizing: border-box; }
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--moon-pearl);
+	font-family: "Segoe UI", Arial, sans-serif;
+	background: linear-gradient(135deg, var(--imperial-violet), var(--amethyst-noir) 45%, var(--dusted-lavender) 78%, var(--orchid-smoke)) fixed;
+}
+
+header {
+	width: 100%;
+	padding: 28px 16px 8px;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0 0 18px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px 18px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: var(--text-soft);
+	font-weight: 600;
+	font-style: italic;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible { color: #fff; text-decoration: underline; }
+
+main {
+	width: min(100%, 980px);
+	padding: 24px 16px 56px;
+}
+
+/* Apresentação */
+.home-intro {
+	padding: clamp(32px, 8vw, 72px) 16px;
+	text-align: center;
+}
+
+.eyebrow {
+	margin: 0 0 12px;
+	color: var(--orchid-smoke);
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+.home-intro h2 {
+	margin: 0 0 16px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(2rem, 6vw, 3.4rem);
+	line-height: 1.1;
+}
+
+.home-intro p:not(.eyebrow) {
+	max-width: 56ch;
+	margin: 0 auto 28px;
+	line-height: 1.6;
+}
+
+.botao-principal {
+	display: inline-block;
+	padding: 12px 26px;
+	border-radius: 8px;
+	background: var(--moon-pearl);
+	color: var(--imperial-violet);
+	font-style: normal;
+	font-weight: 700;
+	text-shadow: none;
+	transition: background 0.2s, transform 0.2s;
+}
+
+.botao-principal:hover,
+.botao-principal:focus-visible {
+	background: #fff;
+	color: var(--imperial-violet);
+	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+/* Atalhos */
+.atalhos h2 {
+	margin: 0 0 20px;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.atalhos-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 20px;
+}
+
+.atalho-card {
+	padding: 24px;
+	border: 1px solid #ffffff80;
+	border-radius: 18px;
+	background: var(--moon-pearl);
+	color: var(--imperial-violet);
+	box-shadow: 0 20px 55px #16092366;
+}
+
+.atalho-card h3 {
+	margin: 0 0 8px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.atalho-card p {
+	margin: 0 0 16px;
+	line-height: 1.5;
+}
+
+.atalho-card a { color: var(--amethyst-noir); text-shadow: none; }
+.atalho-card a:hover { color: var(--imperial-violet); }

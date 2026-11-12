@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Projetos</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="cadastros.css">
+</head>
+
+<body data-page="criarProjetos">
+    <header>
+        <h1>Portfólios 1DTM - Criação de Projetos</h1>
+        <nav class="menu" aria-label="Navegação principal">
+            <button type="button" class="btn-voltar" onclick="window.history.back()">← Voltar</button>
+            <ul>
+                <li><a href="cadastroTurmas.html">Cadastro de Turmas</a></li>
+                <li><a href="cadastroAlunos.html">Cadastro de Alunos</a></li>
+                <li><a href="criarProjetos.html">Criação de Projetos</a></li>
+                <li><a href="listarTurmas.html">Listar Turmas</a></li>
+                <li><a href="listarAlunos.html">Listar Alunos</a></li>
+                <li><a href="listarProjetos.html">Listar Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Criação de Projetos</h2>
+            <form id="form-projeto">
+                <label for="nome">Nome do Projeto:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="imagem">Imagem ou vídeo (até 1,5 MB):</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*,video/*">
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <label for="linguagem">Linguagem utilizada:</label>
+                <input type="text" id="linguagem" name="linguagem" placeholder="Ex.: HTML, CSS e JavaScript">
+
+                <label for="turma">Turma:</label>
+                <select id="turma" name="turma" required>
+                    <option value="">Selecione uma turma</option>
+                </select>
+
+                <label for="alunos">Alunos (separe por vírgula):</label>
+                <input type="text" id="alunos" name="alunos" placeholder="Ex.: João Silva, Maria Souza" required>
+
+                <button type="submit" class="btn">Criar Projeto</button>
+                <p class="aviso" id="aviso" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

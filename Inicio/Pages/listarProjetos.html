@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Projetos</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="listar.css">
+</head>
+
+<body data-page="listarProjetos">
+    <header>
+        <h1>Portfólios 1DTM - Listar Projetos</h1>
+        <nav class="menu" aria-label="Navegação principal">
+            <button type="button" class="btn-voltar" onclick="window.history.back()">← Voltar</button>
+            <ul>
+                <li><a href="cadastroTurmas.html">Cadastro de Turmas</a></li>
+                <li><a href="cadastroAlunos.html">Cadastro de Alunos</a></li>
+                <li><a href="criarProjetos.html">Criação de Projetos</a></li>
+                <li><a href="listarTurmas.html">Listar Turmas</a></li>
+                <li><a href="listarAlunos.html">Listar Alunos</a></li>
+                <li><a href="listarProjetos.html">Listar Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card tabela">
+            <h2>Listar Projetos</h2>
+            <div class="scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Projeto</th>
+                            <th>Descrição</th>
+                            <th>Alunos</th>
+                            <th>Turma</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
