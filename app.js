@@ -1,8 +1,4 @@
-/* Login de exemplo: só valida no navegador, sem segurança real. */
-(function () {
-	'use strict';
-
-	var form = document.getElementById('loginForm');
+var form = document.getElementById('loginForm');
 	var usuarioInput = document.getElementById('usuario');
 	var senhaInput = document.getElementById('senha');
 	var erro = document.getElementById('erro');
@@ -27,4 +23,3 @@
 
 	usuarioInput.addEventListener('input', function () { erro.textContent = ''; });
 	senhaInput.addEventListener('input', function () { erro.textContent = ''; });
-})();

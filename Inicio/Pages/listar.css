@@ -1,7 +1,11 @@
-/* Páginas de listagem: tabelas. */
-.card.tabela { width: min(100%, 980px); }
+.card.tabela {
+	width: 100%;
+	max-width: 980px;
+}
 
-.scroll { overflow-x: auto; }
+.scroll {
+	overflow-x: auto;
+}
 
 table {
 	width: 100%;
@@ -12,24 +16,31 @@ th,
 td {
 	padding: 12px 14px;
 	text-align: left;
-	border-bottom: 1px solid var(--orchid-smoke);
+	border-bottom: 1px solid #C6B6DD;
 }
 
 thead th {
-	background: var(--amethyst-noir);
-	color: var(--moon-pearl);
-	font-size: 0.85rem;
-	letter-spacing: 0.04em;
+	background: #4B1F6F;
+	color: #F1EDF7;
+	font-size: 14px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-thead th:first-child { border-top-left-radius: 8px; }
-thead th:last-child { border-top-right-radius: 8px; }
+thead th:first-child {
+	border-top-left-radius: 8px;
+}
 
-tbody tr:hover { background: #fff; }
+thead th:last-child {
+	border-top-right-radius: 8px;
+}
+
+tbody tr:hover {
+	background: #FFFFFF;
+}
 
 td.vazio {
 	text-align: center;
 	font-style: italic;
-	color: #6b5a85;
+	color: #6B5A85;
 }

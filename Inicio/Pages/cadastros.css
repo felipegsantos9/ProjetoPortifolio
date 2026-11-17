@@ -1,9 +1,8 @@
-/* Formulários de cadastro (usa as variáveis e o .card do base.css). */
 label {
 	display: block;
 	margin: 15px 0 6px;
-	color: var(--amethyst-noir);
-	font-size: 0.92rem;
+	color: #4B1F6F;
+	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -14,11 +13,11 @@ textarea {
 	width: 100%;
 	min-height: 45px;
 	padding: 11px 13px;
-	border: 1px solid var(--orchid-smoke);
+	border: 1px solid #C6B6DD;
 	border-radius: 8px;
 	outline: none;
-	background: #fff;
-	color: var(--imperial-violet);
+	background: #FFFFFF;
+	color: #2A123F;
 	font: inherit;
 	transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -27,25 +26,33 @@ input[type="file"] {
 	display: block;
 	width: 100%;
 	padding: 8px 0;
-	color: var(--imperial-violet);
+	color: #2A123F;
 	font: inherit;
 }
 
-textarea { min-height: 105px; resize: vertical; }
+textarea {
+	min-height: 105px;
+	resize: vertical;
+}
 
 input:focus,
 select:focus,
 textarea:focus {
-	border-color: var(--amethyst-noir);
-	box-shadow: 0 0 0 3px #9c86b944;
+	border-color: #4B1F6F;
+	box-shadow: 0 0 0 3px #9C86B944;
 }
 
 .aviso {
-	min-height: 1.3em;
+	min-height: 20px;
 	margin: 14px 0 0;
-	font-size: 0.92rem;
+	font-size: 15px;
 	font-weight: 600;
 }
 
-.aviso.ok { color: #1f6b3a; }
-.aviso.erro { color: #a3202f; }
+.aviso.ok {
+	color: #1F6B3A;
+}
+
+.aviso.erro {
+	color: #A3202F;
+}

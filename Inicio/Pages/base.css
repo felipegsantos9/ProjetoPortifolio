@@ -1,14 +1,6 @@
-/* Base compartilhada: paleta, fundo, cabeçalho, menu e botões. */
-:root {
-	--imperial-violet: #2a123f;
-	--amethyst-noir: #4b1f6f;
-	--dusted-lavender: #9c86b9;
-	--orchid-smoke: #c6b6dd;
-	--moon-pearl: #f1edf7;
-	--text-soft: rgba(244, 237, 249, 0.92);
+* {
+	box-sizing: border-box;
 }
-
-* { box-sizing: border-box; }
 
 body {
 	min-height: 100vh;
@@ -16,9 +8,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: var(--moon-pearl);
+	color: #F1EDF7;
 	font-family: "Segoe UI", Arial, sans-serif;
-	background: linear-gradient(135deg, var(--imperial-violet), var(--amethyst-noir) 45%, var(--dusted-lavender) 78%, var(--orchid-smoke)) fixed;
+	background: linear-gradient(135deg, #2A123F, #4B1F6F 45%, #9C86B9 78%, #C6B6DD);
 }
 
 header {
@@ -29,8 +21,8 @@ header {
 
 header h1 {
 	margin: 0 0 18px;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: clamp(1.3rem, 3vw, 2rem);
+	font-family: Georgia, serif;
+	font-size: 32px;
 }
 
 .menu {
@@ -52,18 +44,24 @@ header h1 {
 }
 
 a {
-	color: var(--text-soft);
+	color: #F4EDF9EB;
 	font-weight: 600;
 	font-style: italic;
 	text-decoration: none;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	text-shadow: 0 1px 2px #0000004D;
 	transition: color 0.2s ease;
 }
 
 a:hover,
-a:focus-visible { color: #fff; text-decoration: underline; }
+a:focus-visible {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
 
-.menu a[aria-current="page"] { text-decoration: underline; color: #fff; }
+.menu a[aria-current="page"] {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
 
 main {
 	width: 100%;
@@ -73,21 +71,26 @@ main {
 }
 
 .card {
-	width: min(100%, 460px);
-	padding: clamp(24px, 6vw, 40px);
-	border: 1px solid #ffffff80;
+	width: 100%;
+	max-width: 460px;
+	padding: 30px;
+	border: 1px solid #FFFFFF80;
 	border-radius: 18px;
-	background: var(--moon-pearl);
-	color: var(--imperial-violet);
+	background: #F1EDF7;
+	color: #2A123F;
 	box-shadow: 0 20px 55px #16092366;
 }
 
 .card h2 {
 	margin: 0 0 22px;
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: Georgia, serif;
+	font-size: 24px;
 }
 
-.card a { color: var(--amethyst-noir); text-shadow: none; }
+.card a {
+	color: #4B1F6F;
+	text-shadow: none;
+}
 
 button {
 	font: inherit;
@@ -98,28 +101,41 @@ button {
 	transition: background 0.2s, transform 0.2s;
 }
 
-/* Botão principal (formulários) */
+/* Botão principal */
+
 .btn {
 	width: 100%;
 	min-height: 46px;
 	margin-top: 22px;
 	padding: 11px 18px;
-	background: var(--amethyst-noir);
-	color: var(--moon-pearl);
+	background: #4B1F6F;
+	color: #F1EDF7;
 }
 
-.btn:hover { background: var(--imperial-violet); transform: translateY(-1px); }
+.btn:hover {
+	background: #2A123F;
+	transform: translateY(-1px);
+}
 
-/* Botão voltar (menu e cabeçalho) */
+/* Botão voltar */
+
 .btn-voltar {
 	padding: 8px 16px;
-	background: #ffffff26;
-	color: var(--moon-pearl);
-	border: 1px solid #ffffff55;
+	background: #FFFFFF26;
+	color: #F1EDF7;
+	border: 1px solid #FFFFFF55;
 }
 
-.btn-voltar:hover { background: #ffffff40; }
+.btn-voltar:hover {
+	background: #FFFFFF40;
+}
 
 @media (max-width: 520px) {
-	main { padding: 16px 12px 32px; }
+	main {
+		padding: 16px 12px 32px;
+	}
+
+	.card {
+		padding: 24px;
+	}
 }
